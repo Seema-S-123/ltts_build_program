@@ -15,11 +15,13 @@ int main(int argc, const char * argv[]) {
     // Freezing if temperature is less than or equal to 0
     if (temperature <= 0) {
         printf("Freezing...Temperature of %d Farenheit. \n", temperature);
-    } else
+    }
     
-    if (temperature >80 ) {
+    if (temperature >=80 ) {
         printf("Summer time...Temperature is %d Farenheit.\n", temperature);
-    } else {
+    } else 
+    
+    {
          printf("Winter/Spring/Fall ...Temperature is %d Farenheit.\n", temperature);
     }
     return 0;
