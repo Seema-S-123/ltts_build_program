@@ -1,2 +1,27 @@
-language : C
-os : osx
+language: c
+
+
+
+compiler:
+
+  - gcc
+
+before_install:
+
+  - sudo apt-get update
+
+  - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
+
+install:
+
+  - echo  " Install Section"
+
+
+
+script:
+
+  - echo " Script Section"
+
+  - gcc   	PRogram_1.c -o output
+
+  - ./output
