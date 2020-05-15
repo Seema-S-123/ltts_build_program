@@ -8,10 +8,11 @@ int main(int argc, const char * argv[]) {
     
     int temperature;
     printf("Hello, World!\n");
-    printf("Enter the temperature in Farenheit: ");
-    scanf("%d", &temperature);
-
-    // true if temperature is less than 0
+    //printf("Enter the temperature in Farenheit: ");
+    //scanf("%d", &temperature);
+    temperature = 80;
+    
+    // Freezing if temperature is less than or equal to 0
     if (temperature <= 0) {
         printf("Freezing...Temperature of %d Farenheit. \n", temperature);
     } else
