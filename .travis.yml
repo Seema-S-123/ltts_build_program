@@ -22,6 +22,6 @@ script:
 
   - echo " Script Section"
 
-  - gcc   	PRogram_1.c -o output
+  - gcc   	Program_1.c -o output
 
   - ./output
