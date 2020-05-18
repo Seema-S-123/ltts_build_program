@@ -10,6 +10,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include "CUnit/Basic.h"
+#include "CUnit/CUnit.h"
 
 enum weather_code {Winter_subzero = 1, Winter_Spring_fall = 2, Summer =3} ;
 
@@ -51,7 +52,7 @@ CU_ASSERT ( 2 == basic_weather(60));
 
 }
 
-int main(int argc, const char * argv[]) {
+/*int main(int argc, const char * argv[]) {
 
     int temperature;
     
@@ -65,5 +66,19 @@ int main(int argc, const char * argv[]) {
     manage_thermostat_code = basic_weather(temperature);
     printf ("%d", manage_thermostat_code);
     return 0;
+} */
 
+
+int main() {
+    CU_initialize_registry();
+    CU_pSuite suite = CU_add_suite("TestSuite", 0, 0);
+
+    CU_add_test(suite, "Test_Suite_1", testbasic_weather);
+
+    CU_basic_set_mode(CU_BRM_VERBOSE);
+    CU_basic_run_tests();
+    CU_cleanup_registry();
+
+    return 0;
 }
+
