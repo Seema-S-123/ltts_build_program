@@ -11,6 +11,8 @@ before_install:
   - sudo apt-get update
 
   - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
+  
+
 
 install:
 
@@ -25,3 +27,8 @@ script:
   - gcc   	Program_1.c -o output
 
   - ./output
+
+  - echo CUnit
+  - gcc   	*.c -o cunit_democode -lcunit
+  - ./cunit_democode
+  - size cunit_democode
