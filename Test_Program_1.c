@@ -13,7 +13,7 @@
 
 enum weather_code {Winter_subzero = 1, Winter_Spring_fall = 2, Summer =3} ;
 
-int basic_weather(int temp)
+int basic_weather(int temperature)
 {
     enum weather_code current_weather;
      // Freezing if temperature is less than or equal to 0
