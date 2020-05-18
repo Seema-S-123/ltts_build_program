@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include "CUnit/Basic.h"
 
-enum enum weather_code {Winter_subzero = 1, Winter_Spring_fall = 2, Summer =3} ;
+enum weather_code {Winter_subzero = 1, Winter_Spring_fall = 2, Summer =3} ;
 
 int basic_weather(int temp)
 {
