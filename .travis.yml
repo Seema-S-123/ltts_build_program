@@ -29,6 +29,6 @@ script:
   - ./output
 
   - echo CUnit
-  - gcc   	*.c -o cunit_democode -lcunit
+  - gcc   	Test_Program_1.c -o cunit_democode -lcunit
   - ./cunit_democode
   - size cunit_democode
