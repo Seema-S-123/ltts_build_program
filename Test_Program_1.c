@@ -45,7 +45,7 @@ int basic_weather(int temperature)
 void testbasic_weather(void)
 {
 
-CU_ASSERT ((weather_code) 1 == basic_weather(0));
+CU_ASSERT (Winter == basic_weather(0));
 CU_ASSERT ( 3 == basic_weather(100));
 CU_ASSERT ( 2 == basic_weather(60));
 
