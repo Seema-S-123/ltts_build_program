@@ -14,7 +14,7 @@
 
 enum weather_code {Winter_subzero = 1, Winter_Spring_fall = 2, Summer =3} ;
 
-int basic_weather(int temperature)
+enum basic_weather(int temperature)
 {
     enum weather_code current_weather;
      // Freezing if temperature is less than or equal to 0
@@ -38,14 +38,14 @@ int basic_weather(int temperature)
          current_weather = Winter_Spring_fall;
     }
 
-
+ return (current_weather);
 }
 
 
 void testbasic_weather(void)
 {
 
-CU_ASSERT (Winter == basic_weather(0));
+CU_ASSERT (1 == basic_weather(0));
 CU_ASSERT ( 3 == basic_weather(100));
 CU_ASSERT ( 2 == basic_weather(60));
 
