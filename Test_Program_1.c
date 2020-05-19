@@ -25,14 +25,14 @@ enum weather_code basic_weather(int temperature)
         printf("Freezing...Temperature of %d Farenheit. \n", temperature);
         current_weather = Winter_subzero;
       }
-    
+    else
+        
     if (temperature >=80 )
     {
-
         printf("Summer time...Temperature is %d Farenheit.\n", temperature);
         current_weather = Summer;
-    } else 
-
+    } 
+    else 
     {
          printf("Winter/Spring/Fall ...Temperature is %d Farenheit.\n", temperature);
          current_weather = Winter_Spring_fall;
@@ -48,8 +48,10 @@ void testbasic_weather(void)
 CU_ASSERT (1 == basic_weather(0));
 CU_ASSERT ( 3 == basic_weather(100));
 CU_ASSERT ( 2 == basic_weather(60));
-
-
+CU_ASSERT ( 2 == basic_weather(80));
+CU_ASSERT ( 3 == basic_weather(81));
+CU_ASSERT ( 2 == basic_weather(1));
+CU_ASSERT ( 1 == basic_weather(-2));
 }
 
 /*int main(int argc, const char * argv[]) {
