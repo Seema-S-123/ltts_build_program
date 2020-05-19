@@ -48,7 +48,7 @@ void testbasic_weather(void)
 CU_ASSERT (1 == basic_weather(0));
 CU_ASSERT ( 3 == basic_weather(100));
 CU_ASSERT ( 2 == basic_weather(60));
-CU_ASSERT ( 2 == basic_weather(80));
+CU_ASSERT ( 3 == basic_weather(80));
 CU_ASSERT ( 3 == basic_weather(81));
 CU_ASSERT ( 2 == basic_weather(1));
 CU_ASSERT ( 1 == basic_weather(-2));
